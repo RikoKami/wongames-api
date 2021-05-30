@@ -1,9 +1,8 @@
 {
-  "collectionName": "components_page_headers",
+  "collectionName": "components_page_abouts",
   "info": {
-    "name": "header",
-    "icon": "heading",
-    "description": ""
+    "name": "about",
+    "icon": "info"
   },
   "options": {},
   "attributes": {
@@ -12,15 +11,10 @@
       "required": true
     },
     "description": {
-      "type": "text",
+      "type": "richtext",
       "required": true
     },
-    "button": {
-      "type": "component",
-      "repeatable": false,
-      "component": "page.button"
-    },
-    "image": {
+    "media": {
       "model": "file",
       "via": "related",
       "allowedTypes": [
@@ -30,11 +24,6 @@
       "plugin": "upload",
       "required": true,
       "pluginOptions": {}
-    },
-    "about": {
-      "type": "component",
-      "repeatable": false,
-      "component": "page.about"
     }
   }
 }
