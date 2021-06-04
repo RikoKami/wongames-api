@@ -28,4 +28,6 @@ sudo chown -R username:username .
 
 # open the package.json file and modify the versions ex: `3.6.2` to `3.6.3` and then
 yarn install
+
+yarn build
 ```
