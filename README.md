@@ -31,3 +31,9 @@ yarn install
 
 yarn build
 ```
+
+Every time you change something in the frontend by adding some change to the UI, it is necessary to run
+
+```bash
+yarn build --clean
+```
