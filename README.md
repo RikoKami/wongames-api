@@ -37,3 +37,5 @@ Every time you change something in the frontend by adding some change to the UI,
 ```bash
 yarn build --clean
 ```
+
+Link dump default: [data.zip](https://github.com/React-Avancado/landing-page-api/blob/master/data.zip)
