@@ -53,3 +53,22 @@ yarn develop
 # or docker
 yarn build
 ```
+
+## Dump:
+
+```bash
+# -c --if-exists [clean, check if the database already has the tables, if it has everything if it exists]
+# --exclude-table=strapi_administrator [in order not to lose the administrator data, it is necessary to delete the specific table]
+# -h HOST
+# -U DATABASE_USERNAME
+# -d DATABASE_NAME
+# -W [requesting the password]
+
+cd app
+
+# local
+pg_dump -c --if-exists --exclude-table=strapi_administrator -h 127.0.0.1 -U strapi -d strapi -W > strapi_new.sql
+# or docker
+docker ps
+docker exec <container_name> pg_dump -U strapi > strapi_new.sql
+```
