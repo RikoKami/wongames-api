@@ -39,3 +39,17 @@ yarn build --clean
 ```
 
 Link dump default: [data.zip](https://github.com/React-Avancado/landing-page-api/blob/master/data.zip)
+
+## To inject data into the database:
+
+> HOST, DATABASE_USERNAME, DATABASE_NAME = variables are in the database.js file
+
+```bash
+# psql -h HOST -U DATABASE_USERNAME -d DATABASE_NAME -W < file.sql
+psql -h 127.0.0.1 -U strapi -d strapi -W < strapi.sql
+
+# local
+yarn develop
+# or docker
+yarn build
+```
