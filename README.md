@@ -72,3 +72,11 @@ pg_dump -c --if-exists --exclude-table=strapi_administrator -h 127.0.0.1 -U stra
 docker ps
 docker exec <container_name> pg_dump -U strapi > strapi_new.sql
 ```
+
+## Playground with Graphql:
+
+```bash
+┌───────────────────────────────┐
+│ http://localhost:1337/graphql │
+└───────────────────────────────┘
+```
