@@ -80,3 +80,7 @@ docker exec <container_name> pg_dump -U strapi > strapi_new.sql
 │ http://localhost:1337/graphql │
 └───────────────────────────────┘
 ```
+
+## Deploy with Heroku
+
+[Documentation](https://strapi.io/documentation/developer-docs/latest/setup-deployment-guides/deployment/hosting-guides/heroku.html#_7-heroku-database-set-up)
