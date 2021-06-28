@@ -83,9 +83,14 @@ docker exec <container_name> pg_dump -U strapi > strapi_new.sql
 
 ## Deploy with Heroku
 
-[Documentation](https://strapi.io/documentation/developer-docs/latest/setup-deployment-guides/deployment/hosting-guides/heroku.html#_7-heroku-database-set-up) |  [WSL](https://dev.to/wrightdotclick/heroku-cli-on-wsl-26fp)
+[Documentation](https://strapi.io/documentation/developer-docs/latest/setup-deployment-guides/deployment/hosting-guides/heroku.html#_7-heroku-database-set-up) | [WSL](https://dev.to/wrightdotclick/heroku-cli-on-wsl-26fp)
 
+> To change heroku directory by subfolder
 
-## TODO 
+```bash
+# git subtree push --prefix /path heroku <branch>
 
-- [ ] Deploy with heroku
+heroku login
+git subtree push --prefix app heroku main
+git push heroku main
+```
