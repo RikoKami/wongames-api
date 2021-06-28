@@ -100,3 +100,8 @@ git push heroku main
 ```bash
 heroku buildpacks:set heroku/nodejs
 ```
+
+## TODO
+
+- [ ] Add heroku config readme
+- [ ] Add how to contribute session
