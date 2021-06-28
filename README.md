@@ -94,3 +94,9 @@ heroku login
 git subtree push --prefix app heroku main
 git push heroku main
 ```
+
+> Set default language in Heroku
+
+```bash
+heroku buildpacks:set heroku/nodejs
+```
