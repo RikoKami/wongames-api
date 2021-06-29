@@ -1,5 +1,7 @@
 ## API with STRAPI
 
+##### Demo: https://strapiwongames-api.herokuapp.com/
+
 ---
 
 ## Docker
